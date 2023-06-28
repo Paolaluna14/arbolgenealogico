@@ -1,0 +1,207 @@
+/*FLEXBOX*/
+
+header{
+	background-color: #5D79A0; 
+	padding: 5px;
+	text-align: center;
+	font-size: 30px;
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Prompt', sans-serif;
+	color: white;
+}
+
+nav{
+	display: flex;
+	flex-direction: row-reverse;
+	background-color: #E98415;
+	padding: 5px;
+	justify-content: space-between;
+}
+
+nav a{
+	padding: 15px 50px;
+	align-self: center;
+}
+
+.row{
+	display: flex;
+	flex-direction: row;
+}
+
+aside{
+	display: flex;
+	flex-direction: row;
+	background-color: #C2D5F0;
+	padding: 20px;
+	text-align: center;
+	color: #747576;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.contenedor{
+	background-color: #EAEDF0;
+	border-radius: 20px;
+	display: flex;
+	padding: 40px;
+	margin: 10px;
+}
+
+.texto{
+	display: flex;
+	font-size: 25px;
+	padding: 80px;
+	justify-content: flex-end;
+}
+
+.imagen_a{
+	flex-wrap: wrap;
+	align-self: flex-end;
+
+	
+}
+
+.imagen_b{
+	flex-wrap: wrap;
+	align-self: flex-start;
+}
+
+.imagen_c{
+	/*padding-right: 1000;*/
+	flex-wrap: wrap;
+	
+	
+}
+
+.imagen_d{
+	/*padding-right: 1000;*/
+	flex-wrap: wrap;
+	
+}
+
+.ilust{
+	justify-content: flex-start;
+	align-self: center;
+}
+
+footer{
+	background-color: #E98415;
+	padding: 30px;
+	color: white;
+	text-align: center;
+}
+
+.contenedor_pie1{
+	text-align: left;
+	flex-direction: row;
+}
+
+.contenedor_pie2{
+	text-align: right;
+	flex-direction: row-reverse;
+}
+
+#clock{
+	display: flex;
+	align-self: center;
+	padding: 10px;
+	margin: 40px;
+	font-size: 30px;
+	background-color: #EAEDF0;
+	color: #747576;
+	border-radius: 30px;
+}
+
+
+
+/*MEDIA QUERIES*/
+
+@media only screen and (min-width: 0px) and (max-width: 600px)
+{
+		nav{
+			flex-direction: column;
+		}
+
+		header{
+			background-color: #90C583;
+		}
+
+		.row{
+			flex-direction: column;
+		}
+
+		.ilust{
+			scale: 75%;
+		}
+
+		.contenedor{
+			flex-direction: column;
+		}
+
+		.texto{
+			padding: 10px;
+		}
+
+		footer{
+			background-color: #90C583;
+		}
+
+		.contenedor_pie1{
+			text-align: center;
+		}
+
+		.contenedor_pie2{
+			text-align: center;
+		}
+
+		.imagen_c{
+			scale: 50%;
+		}
+
+		.imagen_d{
+			scale: 50%;
+		}
+
+		.imagen_b{
+			scale: 50%;
+		}
+
+		.imagen_a{
+			scale: 50%;
+		}
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 1023px)
+{
+		nav{
+			flex-direction: row;
+			justify-content: center;
+		}
+
+		aside{
+			background-color: #E8B37B;
+		}
+
+		.contenedor{
+			padding: 10px;
+		}
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1366px)
+{
+		header{
+			background-color: #E7AE08;
+		}
+
+		.contenedor{
+			background-color: black;
+			color: white;
+		}
+
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Prima 4 | Denisse</title>
+
+<!--LINKS-->
+	
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap" rel="stylesheet">>
+
+</head>
+
+
+
+<body>
+	
+
+	<header><h2>Familia Luna Zamora</h2></header>
+
+	<nav>
+		<a href="index.html"><img src="images/home3.png" width="60px"></a>
+
+		<div id="clock"></div>
+  			<script>
+    		const runClock = () => {
+     	 	const date = new Date();
+      		const day = date.getDate();
+      		const month = date.getMonth() + 1;
+      		const fullYear = date.getFullYear();
+      		const hours = date.getHours();
+      		const minutes = date.getMinutes();
+      		const seconds = date.getSeconds();
+     		const clock = document.getElementById('clock');
+      		clock.innerHTML = `${day}/${month}/${fullYear} ${hours}:${minutes}:${seconds}`;
+   	 	 	};
+      		setInterval(runClock, 1000);
+  			</script> 
+
+  		
+	</nav>
+
+	<div class="row">
+		
+		<aside>
+
+				
+				<div class="imagen_c"><a href="primo3.html"><img src="images/izquierda.png" width="70px"></a></div>
+
+
+				<div class="contenedor">
+				
+					<div class="imagen_b"><a href="tío2.html"><img src="images/arriba.png" width="100px"></a></div>
+
+					<div class="ilust"><img src="images/prima 4.png" width="300px"></div>
+
+					<div class="texto">Ella es mi prima mayor llamada Daniela Denisse Luna Barroso pero toda la familia la llama "bola". Nació en la Ciudad de Puebla y actualmente tiene 24 años y es ama de casa.</div>
+
+					<div class="imagen_a"><a href="sobrina3.html"><img src="images/abajo.png" width="100px"></a></div>
+			</div>
+			
+		</aside>
+
+		
+	</div>
+
+	<footer>
+		<div class="contenedor_pie">
+			<div class="contenedor_pie1">Árbol Genealógico
+			<br>
+			Primavera 2023
+			</div>
+
+
+			<div class="contenedor_pie2">Angela Paola Pérez Luna
+			<br>
+			Desarrollo Digital III
+			</div>	
+		</div>
+	</footer>
+
+</body>
+	
+</html>
